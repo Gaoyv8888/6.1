@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>镇馆之宝详情</title>
+<meta charset="utf-8" />
+<style type="text/css">
+html,body{
+  width:100%;
+	height:100%;
+	margin:0px;
+	background-color:antiquewhite;
+}
+
+.head{
+	background-color:#000000;
+    width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:right;
+}
+ .head div {
+            display: inline-block;
+            margin-right: 10px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .head div:hover {
+            color:indianred;
+        }
+.head div{
+	width:200px;
+	line-height:50px;
+	text-align:center;
+	color:#FFFFFF;
+}
+  .text1{
+    width:80%;
+    height:200px;
+    position: absolute;
+    top: 600px;
+	right:20px;
+    text-align:center;
+	margin:auto auto;
+	text-align:center;
+	background-color: indianred;
+	border-radius:20px;
+	color:antiquewhite;
+	font-size:20px;
+	letter-spacing: 2.5px;
+  }
+  .text2{
+	width:80%;
+	height:250px;
+	line-height:50px;
+	text-align:center;
+	position: absolute;
+	top:1300px;
+	left:20px;
+	margin:auto auto;
+	background-color: indianred;
+	border-radius:20px;
+	color:antiquewhite;
+	font-size:20px;
+	letter-spacing: 2.5px;
+  }
+  .main{
+    width:100%;
+    margin:0px auto;
+    height:500px;
+	border:1px solid black;
+	background-image: url("https://s2.loli.net/2023/12/20/TlCua6f1R7b3EDX.jpg");
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	transition: background-image 1s;
+	cursor: pointer;
+  }
+  .image1 img{
+	width:400px;
+	height:400px;
+	line-height:500px;
+	text-align:center;
+	position: absolute; 
+	  top: 850px;
+	  left: 100px;
+}
+.image2 img{
+	width:400px;
+	height:400px;
+	line-height:500px;
+	text-align:center;
+	position: absolute; 
+	  top: 850px;
+	  left: 535px;
+	 }
+  .image3 img{
+	width:400px;
+	height:400px;
+	line-height:500px;
+	text-align:center;
+	position: absolute;
+	right:100px;
+	top:850px;
+	 }
+	 
+.overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0, 0, 0, 0.7);
+   justify-content: center;
+   align-items: center;
+   }
+.overlay img {
+   max-width: 80%;
+   max-height: 80%;
+         }
+.text1, .text2 {
+    transition: color 0.3s;
+    cursor: pointer;
+    }
+.text1:hover, .text2:hover {
+    color: black;
+    }
+ .button-container {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .float-button {
+            width: 50px;
+            height: 50px;
+            background-color: indianred;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+</style>
+</head>
+
+
+<body>
+ <div class="head">
+   <div>一键印章</div>
+   <div>返回探索</div>
+ 
+ </div>
+ <div class="main"></div>    
+ <div class="text1">双鸟朝阳纹牙雕是一件新石器时代的牙骨角器，长16.6厘米，宽5.9厘米，厚1.2厘米。</br>
+牙雕上半部分残缺，底端稍有残缺。正面雕刻了一组图案，中间是由五个大小不等的同心圆构成的太阳纹，</br>
+外圆上端刻出火焰状。两侧刻有昂首相望的双鸟，面向太阳，呈对称形。</br>
+双鸟朝阳纹牙雕作为一件新石器时代的艺术品，其具体用途和功能尚不明确。</br>
+它可能代表了当时人们对太阳的崇拜和对自然力量的敬畏，也可能与宗教仪式或祭祀活动有关。</div>
+ <div class="text2">双鸟朝阳纹牙雕是河姆渡文化的重要遗存，展示了当时人们的审美观念和艺术成就。</br>
+作为一件艺术珍品，它对研究新石器时代人类文化和思想提供了宝贵的资料。</br>
+同时，它也是考古学研究中的重要证据，帮助我们了解古代社会的发展和演变。</div>    
+
+ <div class="image1">
+        <img src="https://s2.loli.net/2024/01/08/GbvV2eKJmh3QjDY.png" alt="无法加载">
+ </div>
+ <div class="image2">
+        <img src="https://s2.loli.net/2024/01/08/iNZGaxOmUA4fFnE.png" alt="无法加载">
+ </div>
+ <div class="image3">
+        <img src="https://s2.loli.net/2024/01/08/fxato4DMdX2i7jc.png" alt="无法加载">
+ </div>
+
+ <div class="overlay">
+        <img src="" alt="放大图片">
+ </div>
+
+
+ <div class="float-button" onclick="changeBackgroundImage(0)">壹</div>
+ <div class="float-button" onclick="window.location.href = ' https://gaoyv8888.github.io/6.1/'">贰</div>
+ <div class="float-button" onclick="changeBackgroundImage(2)">叁</div>
+ <div class="float-button" onclick="changeBackgroundImage(3)">肆</div>
+ <div class="float-button" onclick="changeBackgroundImage(4)">伍</div>
+ <div class="float-button" onclick="changeBackgroundImage(5)">陆</div>
+ <div class="float-button" onclick="changeBackgroundImage(6)">柒</div>
+ <div class="float-button" onclick="changeBackgroundImage(7)">捌</div>
+ <div class="float-button" onclick="changeBackgroundImage(8)">玖</div>
+ <div class="float-button" onclick="changeBackgroundImage(9)">拾</div>
+ <script>
+    const smallImages = document.querySelectorAll('.image1, .image2, .image3');
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = overlay.querySelector('img');
+
+    smallImages.forEach(smallImage => {
+        smallImage.addEventListener('click', () => {
+            overlayImage.src = smallImage.querySelector('img').src;
+            overlay.style.display = 'flex';
+        });
+    });
+
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none';
+    });
+
+    const divs = document.querySelectorAll('.head div');
+    divs.forEach(div => {
+        div.addEventListener('mouseover', () => {
+            div.style.color = 'indianred';
+        });
+        div.addEventListener('mouseout', () => {
+            div.style.color = '';
+        });
+    });
+
+    const main = document.querySelector('.main');
+    const images = [
+        'https://s2.loli.net/2023/11/08/b4dlopxM3nuvUY5.jpg',
+        'https://s2.loli.net/2023/12/20/TlCua6f1R7b3EDX.jpg',
+        'https://s2.loli.net/2023/12/20/myE8xCdWcbh3Pzr.jpg',
+        'https://s2.loli.net/2023/12/20/Ygkh5zIed3RG4lb.jpg',
+		'https://s2.loli.net/2023/12/20/vRao1IAzw72dhnk.jpg',
+		'https://s2.loli.net/2023/12/20/rPnSm3itsbWx7Fg.jpg',
+		'https://s2.loli.net/2023/12/20/s9Gy8YPTkwDxbqA.jpg',
+		'https://s2.loli.net/2023/12/20/XARlGryaSN2mh6s.jpg',
+		'https://s2.loli.net/2023/12/20/IpxZoThnlNKWLYS.jpg',
+		'https://s2.loli.net/2023/12/20/MqsSbVZfcRJtQuy.jpg'
+    ];
+    let currentIndex = 0;
+
+    function changeBackgroundImage(index) {
+        currentIndex = index;
+        main.style.backgroundImage = `url(${images[currentIndex]})`;
+    }
+
+    main.addEventListener('click', () => {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0;
+        }
+        main.style.backgroundImage = `url(${images[currentIndex]})`;
+    });
+ </script>
+</body>
+</html>
